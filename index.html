@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer & WebSolution</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="We build modern websites,web application, mobile apps, and digital solutions that help businesses grow. Trusted by startups and enterprises for innovation and success.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <style>
+    .nunito-heading {
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    body {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      font-family: 'nunito-heading', sans-serif !important;
+    }
+
+    .glass-container {
+      max-width: 480px;
+      width: 100%;
+      padding: 2rem;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.12);
+      /* translucent layer */
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+      color: #fff;
+    }
+
+    /* Inputs on glass background */
+    .form-control {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #fff;
+    }
+
+    .form-control::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .form-control:focus {
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.15);
+    }
+
+    /* Submit button with gradient */
+    .btn-gradient {
+      background: linear-gradient(90deg, #06b6d4, #4f46e5);
+      border: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .btn-gradient:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    small.text-muted {
+      color: rgba(255, 255, 255, 0.75) !important;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0d6efd, #6610f2);
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .service-card {
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background: #212529;
+      color: white;
+      padding: 20px 0;
+    }
+
+    @media (max-width: 575.98px) {
+      #home {
+        background-position: top center;
+        /* Show top part of image */
+        min-height: 80vh;
+        /* Reduce height so button isn’t hidden */
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="favicon.png" alt="Logo" height="30" class="me-2 rounded-circle">
+        <span class="fw-bold">Computer & Web Solution</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home"><i class="bi-house"></i>&nbsp;Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+
+
+
+
+
+
+  <section id="home"
+    class="hero d-flex align-items-center flex-column flex-md-row justify-content-md-between align-items-md-center text-center text-white"
+    style="
+    background: url('c&w_backgound.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+  ">
+
+
+    <!-- Hero div1 -->
+
+    <div class="card bg-transparent align-self-center ">
+      <h1 class="display-4 fw-bold text-white">Welcome to Computer & WebSolution</h1>
+      <p class="lead mb-4 text-warning">We create modern solutions that help your business grow.</p>
+      <a href="#services" class="btn btn-primary btn-md mx-5">Our Services</a>
+      <a href="#contact" class="btn btn-outline-light btn-md mx-5 my-2">Get in Touch</a>
+
+    </div>
+
+
+
+    <!-- Hero div2 -->
+
+
+
+
+    <!-- Hero div3 -->
+    <div class="card bg-transparent p-0 align-self-center">
+
+      <div class="card-body ms-5">
+        <form action="https://formspree.io/f/mkgvzjaw" class="glass-container" style="width: 19rem;" method="POST">
+
+          <!-- Name -->
+          <div class="mb-3">
+
+
+            <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+
+          </div>
+
+          <!-- Email -->
+          <div class="mb-3">
+
+
+            <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+
+          </div>
+
+          <!-- Phone -->
+          <div class="mb-3">
+
+
+            <input type="tel" class="form-control" name="phone" placeholder="Enter your phone number"
+              pattern="[0-9]{10}" required>
+
+
+          </div>
+
+          <!-- Message -->
+          <div class="mb-3">
+
+            <textarea class="form-control" name="message" rows="4" placeholder="Your message" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+
+
+          <button type="submit" class="btn btn-gradient w-100 my-auto  fw-semibold">Send Message</button>
+      </div>
+      </form>
+
+      <!-- whatup link Button -->
+      <div class="mb-3 px-4">
+        <a href="href="
+          https://wa.me/918291747546?text=Hello,%20I’d%20love%20to%20know%20how%20I%20can%20help%20you%20😊""
+          class="btn btn-lg btn-success text-light btn-shiny shadow-lg mx-4 px-4 py-2"><i
+            class="bi bi-whatsapp fs-5"></i>
+          let's Start</a>
+      </div>
+
+    </div>
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+  <!-- Services Section -->
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold text-primary">Our Services</h2>
+      <div class="row g-4">
+
+        <!-- Website Development -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-lg border-0 text-center p-4 service-card">
+            <div class="icon mb-3">
+              <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center"
+                style="width:70px; height:70px; font-size:30px;">
+                🌐
+              </div>
+            </div>
+            <h5 class="fw-bold">Website Development</h5>
+            <p>Custom, responsive, and SEO-friendly websites tailored to your business needs.</p>
+          </div>
+        </div>
+
+        <!-- Software Development -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-lg border-0 text-center p-4 service-card">
+            <div class="icon mb-3">
+              <div class="rounded-circle bg-success text-white d-inline-flex align-items-center justify-content-center"
+                style="width:70px; height:70px; font-size:30px;">
+                💻
+              </div>
+            </div>
+            <h5 class="fw-bold">Software Development</h5>
+            <p>Scalable and secure software solutions designed to streamline your workflow.</p>
+          </div>
+        </div>
+
+        <!-- Mobile App Development -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-lg border-0 text-center p-4 service-card">
+            <div class="icon mb-3">
+              <div class="rounded-circle bg-warning text-dark d-inline-flex align-items-center justify-content-center"
+                style="width:70px; height:70px; font-size:30px;">
+                📱
+              </div>
+            </div>
+            <h5 class="fw-bold">Mobile App Development</h5>
+            <p>High-performance mobile apps for Android and iOS with user-friendly design.</p>
+          </div>
+        </div>
+
+        <!-- Cloud Support -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-lg border-0 text-center p-4 service-card">
+            <div class="icon mb-3">
+              <div class="rounded-circle bg-info text-white d-inline-flex align-items-center justify-content-center"
+                style="width:70px; height:70px; font-size:30px;">
+                ☁️
+              </div>
+            </div>
+            <h5 class="fw-bold">Cloud Support</h5>
+            <p>Cloud migration, setup, and support to keep your systems running smoothly.</p>
+          </div>
+        </div>
+
+        <!-- Latest Technologies -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-lg border-0 text-center p-4 service-card">
+            <div class="icon mb-3">
+              <div class="rounded-circle bg-danger text-white d-inline-flex align-items-center justify-content-center"
+                style="width:70px; height:70px; font-size:30px;">
+                🚀
+              </div>
+            </div>
+            <h5 class="fw-bold">Latest Technologies</h5>
+            <p class="small">
+              Modern programming (JavaScript, Python, Java, .NET, Node.js, React).
+              Fast, secure hosting (AWS, Azure, Google Cloud).
+              Databases: SQL (MySQL, PostgreSQL, MS SQL) & NoSQL (MongoDB, Firebase).
+              Always future-ready with DevOps, containers & automation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Customer Support -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-lg border-0 text-center p-4 service-card">
+            <div class="icon mb-3">
+              <div
+                class="rounded-circle bg-secondary text-white d-inline-flex align-items-center justify-content-center"
+                style="width:70px; height:70px; font-size:30px;">
+                🤝
+              </div>
+            </div>
+            <h5 class="fw-bold">Customer Support</h5>
+            <p>Dedicated support team ensuring your business runs without interruptions.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <!-- About Us Section -->
+  <section id="about" class="about-section py-5 text-center text-light"
+    style="background: linear-gradient(135deg, #0d6efd, #6f42c1);">
+    <div class="container">
+      <!-- Heading -->
+      <h2 class="mb-4 fw-bold display-5">About Us</h2>
+
+      <!-- Intro Text -->
+      <p class="lead mb-5 mx-auto" style="max-width: 700px;">
+        We are a passionate team dedicated to delivering the best solutions for our clients.
+        With years of experience in technology and design, our mission is to innovate and
+        help businesses grow with creativity and excellence.
+      </p>
+
+      <!-- Highlights -->
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card bg-transparent border-0 text-light">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="bi bi-lightbulb display-4"></i>
+              </div>
+              <h5 class="fw-bold">Innovation</h5>
+              <p class="small">
+                Bringing fresh ideas and modern technology into every project we take on.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-transparent border-0 text-light">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="bi bi-people display-4"></i>
+              </div>
+              <h5 class="fw-bold">Teamwork</h5>
+              <p class="small">
+                We believe collaboration is the key to creating powerful solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-transparent border-0 text-light">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="bi bi-graph-up-arrow display-4"></i>
+              </div>
+              <h5 class="fw-bold">Growth</h5>
+              <p class="small">
+                Our mission is to help clients achieve sustainable business growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Contact Section -->
+
+  <section class="contact-section py-5 bg-dark" id="contact">
+    <div class="container">
+      <div class="row justify-content-center">
+
+        <!-- Contact Info -->
+        <div class="col-lg-5 mb-4">
+          <h2 class="fw-bold mb-4 text-light">Contact Us</h2>
+          <p class="mb-4 text-light">
+            Have questions or need help? Get in touch with us and we’ll be happy to assist.
+          </p>
+          <ul class="list-unstyled">
+            <li class="mb-3 d-flex align-items-center">
+              <i class="bi bi-geo-alt-fill text-primary fs-4 me-3"></i>
+              <span class="text-light">R8/B-7 ,Nirman Bhuvan, Vikas nagar andheri(East),Mumbai, India</span>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <i class="bi bi-telephone-fill text-primary fs-4 me-3"></i>
+              <span class="text-light">+91 8291747546</span>
+            </li>
+            <li class="mb-3 d-flex align-items-center">
+              <i class="bi bi-envelope-fill text-primary fs-4 me-3"></i>
+              <span class="text-light">manoj3feb1991@gmail.com</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="card shadow border-0">
+            <div class="card-body p-4">
+              <h5 class="mb-4 fw-bold">Send us a message</h5>
+              <form action="https://formspree.io/f/mkgvzjaw" method="POST">
+
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Name</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-primary text-white"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Email</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-success text-white"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Phone</label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-warning text-dark"><i class="bi bi-telephone"></i></span>
+                    <input type="tel" class="form-control" name="phone" placeholder="Enter your phone number"
+                      pattern="[0-9]{10}" required>
+                  </div>
+                  <small class="text-muted">Format: 10 digits (e.g. 9876543210)</small>
+                </div>
+
+                <!-- Message -->
+                <div class="mb-3">
+                  <label class="form-label fw-semibold">Message</label>
+                  <textarea class="form-control" name="message" rows="4" placeholder="Your message" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-gradient w-100 py-2 fw-semibold">Send Message</button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Footer -->
+  <footer class="text-center">
+
+    <div class="d-flex justify-content-center gap-3">
+      <a href="https://www.facebook.com/your-profile" target="_blank" class="btn btn-outline-primary btn-floating">
+        <i class="bi bi-facebook fs-5"></i>
+      </a>
+      <a href="https://wa.me/918291747546?text=Hello,%20I’d%20love%20to%20know%20how%20I%20can%20help%20you%20😊"
+        target="_blank" class="btn btn-outline-success btn-floating">
+        <i class="bi bi-whatsapp fs-5"></i>
+      </a>
+
+
+
+      <a href="https://www.instagram.com/your-profile" target="_blank" class="btn btn-outline-danger btn-floating">
+        <i class="bi bi-instagram fs-5"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="btn btn-outline-primary btn-floating">
+        <i class="bi bi-linkedin fs-5"></i>
+      </a>
+
+
+      <p class="mb-0">© 2025 Computer & WebSolution. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
