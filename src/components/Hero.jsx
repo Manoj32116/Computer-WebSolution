@@ -1,10 +1,13 @@
 export default function Hero() {
+  const bgUrl = new URL('cw_backgound.jpg', import.meta.env.BASE_URL).href;
   return (
     <section
       id="home"
       className="hero d-flex align-items-center text-white"
       style={{
-        background: "url('/c&w_backgound.jpg') no-repeat center center",
+        backgroundImage: `url('${bgUrl}')`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center center",
         backgroundSize: "cover",
         minHeight: "100vh",
       }}

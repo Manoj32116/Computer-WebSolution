@@ -18,11 +18,12 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const logoSrc = new URL('favicon.png', import.meta.env.BASE_URL).href;
   return (
     <nav ref={navRef} className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top glass-nav" data-aos="fade-down">
       <div className="container">
         <a className="navbar-brand d-flex align-items-center" href="#">
-          <img src="/favicon.png" alt="Logo" height="30" className="me-2 rounded-circle logo-animated logo-interactive" />
+          <img src={logoSrc} alt="Logo" height="30" className="me-2 rounded-circle logo-animated logo-interactive" />
           <span className="fw-bold">Computer & Web Solution</span>
         </a>
         <button
