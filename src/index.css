@@ -1,0 +1,191 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* Global Body */
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif !important;
+}
+
+/* Glass Form Styling */
+.glass-container {
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+/* Inputs inside glass */
+.form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.15);
+}
+
+/* Gradient button */
+.btn-gradient {
+  background: linear-gradient(90deg, #06b6d4, #4f46e5);
+  border: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-gradient:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Service Cards */
+.service-card {
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background: #212529;
+  color: white;
+  padding: 20px 0;
+}
+
+/* ----------------- */
+/* RESPONSIVENESS 🪄 */
+/* ----------------- */
+@media (max-width: 991.98px) {
+  .hero {
+    padding: 80px 20px;
+  }
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+}
+/* ----------------- */
+/* Logo Animation ✨ */
+/* ----------------- */
+.logo-animated {
+  animation: spinLogo 6s linear infinite;
+}
+
+@keyframes spinLogo {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+/* ------------------------------------- */
+/* Rich navbar logo + link interactions  */
+/* ------------------------------------- */
+.glass-nav {
+  transition: background-color 300ms ease, box-shadow 300ms ease, backdrop-filter 300ms ease;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+}
+.glass-nav.is-scrolled {
+  background: rgba(0,0,0,0.6);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px) saturate(1.1);
+}
+
+.logo-interactive {
+  transition: transform 250ms ease, filter 300ms ease, box-shadow 300ms ease;
+  box-shadow: 0 0 0 rgba(13,110,253,0);
+}
+.logo-interactive:hover {
+  transform: scale(1.08) rotate(6deg);
+  filter: drop-shadow(0 0 12px rgba(13,110,253,0.65)) saturate(1.2);
+}
+
+.navbar .rich-link {
+  position: relative;
+  border-radius: 999px;
+  transition: color 200ms ease, background-color 200ms ease, transform 150ms ease;
+}
+.navbar .rich-link::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 6px;
+  height: 2px;
+  background: linear-gradient(90deg, #0d6efd, #6f42c1);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease;
+  border-radius: 2px;
+  opacity: 0.9;
+}
+.navbar .rich-link:hover {
+  background: rgba(255,255,255,0.08);
+}
+.navbar .rich-link:hover::after {
+  transform: scaleX(1);
+}
+.navbar .rich-link:active {
+  transform: translateY(1px);
+}
+
+
+@media (max-width: 575.98px) {
+  .hero {
+    padding: 60px 15px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .glass-container {
+    padding: 1.5rem;
+    width: 100% !important;
+  }
+  .btn-gradient,
+  .btn-success {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
