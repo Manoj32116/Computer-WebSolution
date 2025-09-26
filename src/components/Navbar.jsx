@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import logoSrc from '../assets/favicon.png';
+
 
 export default function Navbar() {
   const navRef = useRef(null);
@@ -18,7 +20,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const logoSrc = new URL('favicon.png', import.meta.env.BASE_URL).href;
+  
   return (
     <nav ref={navRef} className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top glass-nav" data-aos="fade-down">
       <div className="container">

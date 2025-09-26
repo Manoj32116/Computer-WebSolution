@@ -1,5 +1,9 @@
+import bgUrl from '../assets/cwimg.jpg';
+
+
+
 export default function Hero() {
-  const bgUrl = new URL('cw_backgound.jpg', import.meta.env.BASE_URL).href;
+ 
   return (
     <section
       id="home"
